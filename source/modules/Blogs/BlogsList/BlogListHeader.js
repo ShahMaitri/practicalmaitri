@@ -15,7 +15,7 @@ const BlogListHeader = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#3D6DCC',
+    backgroundColor: '#EA7600',
     justifyContent: 'space-around',
     paddingTop: 0,
     height: Platform.select({

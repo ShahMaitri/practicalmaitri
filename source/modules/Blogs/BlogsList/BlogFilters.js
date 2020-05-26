@@ -10,6 +10,7 @@ const BlogFilters = (props) => {
         onPress={selectedIndex => {
           props.selectedIndex !== selectedIndex ? props.updateIndex(selectedIndex) : {}
         }}
+        selectedButtonStyle={{ backgroundColor: '#EA7600'}}
         selectedIndex={props.selectedIndex}
         buttons={buttons}
       />

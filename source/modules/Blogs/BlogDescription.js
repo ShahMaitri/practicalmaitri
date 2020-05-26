@@ -28,14 +28,14 @@ export const BlogDescription = (props) => {
             style={styles.authorDateParentStyle}>
             <Text style={{
               fontSize: 14,
-              color: '#65A7C5'
+              color: '#EA7600'
 
             }}>Written by: {props.item.author}</Text>
 
             <Text
               style={{
                 fontSize: 12,
-                color: '#65A7C5'
+                color: '#EA7600'
               }}>
               {<Moment element={Text} format="YYYY/MM/DD HH:mm:ss" date={props.item.created_at} />}
             </Text>

@@ -6,7 +6,8 @@ import {
   SafeAreaView,
   FlatList,
   RefreshControl,
-  StyleSheet
+  StyleSheet,
+  Text
 } from 'react-native'
 
 import { fetchData } from '../../../APIs/ApiCalls'
@@ -160,13 +161,16 @@ export class BlogsList extends Component {
             renderItem={({ item, index }) => (
               <BlogListItem
                 showDesc={() => this.setState({ isModalVisible: true, clickedData: item })}
-                key={index}
+       
                 item={item} />
             )}
-            keyExtractor={(index) => index.toString()}
             ListFooterComponent={this.renderLoader()}
           />
         }
+
+        {this.state.filterData.length == 0 && !this.state.loading && !this.state.isRefreshing && 
+          <Text style={{ fontSize: 18, color: '#EA7600', padding: 20, alignSelf: 'center'}}>No Posts Available.</Text>
+  }
         {this.state.filterData.length > 0 && this.state.isModalVisible &&
           <BlogDescription item={this.state.clickedData} isModalVisible={this.state.isModalVisible} toggleModal={this.toggleModal} />
         }

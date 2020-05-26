@@ -13,7 +13,9 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "react": "16.11.0",
-    "react-native": "0.62.2"
+    "react-native": "0.62.2",
+    "react-native-elements": "^2.0.0",
+    "react-native-vector-icons": "^6.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

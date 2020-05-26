@@ -1,3 +1,5 @@
+// Description of Blog
+
 import React from 'react'
 import { View, Button, Text, StyleSheet, Dimensions, Linking } from 'react-native'
 import Modal from 'react-native-modal';

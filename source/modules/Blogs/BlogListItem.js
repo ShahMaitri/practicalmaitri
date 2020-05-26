@@ -1,3 +1,5 @@
+// List Item for blog list
+
 import React from 'react'
 import {
     View,
